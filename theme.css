@@ -93,6 +93,42 @@ a:visited {
   color: var(--violet);
 }
 
+/* FORMS */
+
+#emailForm {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 8px;
+}
+
+input {
+  border: 0;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-weight: 500;
+}
+
+#emailSubmit {
+  background-color: var(--yellow) !important;
+  color: black !important;
+  border: 0;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+input:hover,
+button:hover {
+  box-shadow: 0 0 0 2px #440099;
+}
+
+input:focus,
+button:focus {
+  outline: var(--yellow);
+  outline-color: var(--yellow);
+  box-shadow: 0 0 0 2px #fedb00;
+}
+
 /* SPECIAL */
 emoji {
   font-style: normal !important;

@@ -82,42 +82,57 @@
           >
         </p>
         <br />
+      </r-cell>
+      <r-cell span="2" span-s="1">
+        <h3>
+          I link new photos as I publish them, talk about my work, and announce
+          prints on my e-mail newsletter.
+        </h3>
+        <h3>
+          <form
+            id="emailForm"
+            action="https://buttondown.com/api/emails/embed-subscribe/ultraviolet"
+            method="post"
+            class="embeddable-buttondown-form"
+          >
+            <label for="bd-email" hidden>Enter your email</label>
+            <input
+              placeholder="your@email.com"
+              type="email"
+              name="email"
+              id="bd-email"
+            />
+            <button id="emailSubmit" type="submit">⌘&nbsp;Subscribe</button>
+          </form>
+        </h3>
+        <h4>
+          You can also read my
+          <a href="https://buttondown.com/ultraviolet" target="_blank"
+            >past emails</a
+          >, or subscribe with
+          <a href="https://buttondown.com/ultraviolet/rss">RSS</a>.
+        </h4>
         <hr />
-        <br />
       </r-cell>
       <r-cell span="1" span-s="1">
-        <p>
-          I post my work on the photo-sharing app Glass. You can follow me there
-          if you are a member, or you can subscribe to the RSS feed of my
-          account.
-        </p>
-        <h2>
-          Glass
-          <a href="https://glass.photo/108c">@108c</a>
-        </h2>
-        <h2>
-          RSS
-          <a href="https://glass.photo/108c/rss">@108c/rss</a>
-        </h2>
-      </r-cell>
-      <r-cell span="1" span-s="1">
-        <p>
-          I also share my photography on BlueSky. You can follow me there, where
-          I also post about my personal life.
-        </p>
-        <h2>
+        <h4>
           Bluesky
-          <a href="https://bsky.app/profile/ultraviolet.gay"
+          <a class="yellow" href="https://bsky.app/profile/ultraviolet.gay"
             >@ultraviolet.gay</a
           >
-        </h2>
-      </r-cell>
-      <r-cell span="1" span-s="1">
+        </h4>
+        <h4>
+          Glass
+          <a href="https://glass.photo/108c">@108c</a>
+        </h4>
+        <h4>Custom Prints</h4>
         <p>
-          If you have questions about my photography, please send me an email.
-          Anything sent to this domain will reach me. I'd be happy to discuss
-          one-off prints, if something resonates with you. Thank you for your
-          time and attention.
+          If you'd like to inquire about buying a print of my work, please send
+          me an email. Anything sent to this domain will reach me.
+        </p>
+        <p hidden>
+          I'd be happy to discuss one-off prints, if something resonates with
+          you. Thank you for your time and attention.
         </p>
       </r-cell>
     </r-grid>
