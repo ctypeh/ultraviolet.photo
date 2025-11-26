@@ -148,6 +148,10 @@ span.rainbow {
   -webkit-text-fill-color: transparent;
 }
 
+hr {
+  margin: 3rem 0 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   hr {
     -webkit-background-clip: block;
