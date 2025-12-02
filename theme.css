@@ -143,6 +143,7 @@ emoji {
   color: var(--violet) !important;
 }
 
+button.rainbow,
 span.rainbow {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
