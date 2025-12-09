@@ -76,7 +76,7 @@ body {
 }
 
 a {
-  color: var(--violet);
+  color: color-mix(in hsl, white 25%, var(--violet) 75%) !important;
   text-decoration: none;
   white-space: normal;
 }
@@ -90,7 +90,7 @@ a:hover {
 }
 
 a:visited {
-  color: var(--violet);
+  color: color-mix(in hsl, white 25%, var(--violet) 75%) !important;
 }
 
 /* FORMS */
@@ -143,6 +143,7 @@ emoji {
   color: var(--violet) !important;
 }
 
+button.rainbow,
 span.rainbow {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
