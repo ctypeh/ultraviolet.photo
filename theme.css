@@ -99,7 +99,6 @@ a:visited {
 
 #emailForm {
   display: flex;
-  flex-direction: row;
   gap: 12px;
   border-radius: 8px;
 }
@@ -109,7 +108,6 @@ input {
   border-radius: 10px;
   padding: 6px 10px;
   font-weight: 500;
-  width: 100%;
 }
 
 #emailSubmit {
@@ -159,6 +157,12 @@ hr {
   hr {
     -webkit-background-clip: block;
     background-color: white;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #emailForm {
+    flex-direction: column;
   }
 }
 
