@@ -7,7 +7,7 @@
   color-scheme: dark;
   --yellow: #fedb00;
   --violet: #440099;
-  font-size: 15px !important;
+  font-size: 15px;
 }
 
 :root {
@@ -78,21 +78,21 @@ body {
 }
 
 a {
-  color: color-mix(in hsl, white 25%, var(--violet) 75%) !important;
+  color: color-mix(in hsl, white 25%, var(--violet) 75%);
   text-decoration: none;
   white-space: normal;
 }
 
 a:hover {
-  color: var(--yellow) !important;
+  color: var(--yellow);
   text-decoration: underline;
-  text-decoration-style: wavy !important;
-  text-decoration-color: var(--violet) !important;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--violet);
   text-decoration-skip-ink: auto;
 }
 
 a:visited {
-  color: color-mix(in hsl, white 25%, var(--violet) 75%) !important;
+  color: color-mix(in hsl, white 25%, var(--violet) 75%);
 }
 
 li.fav::marker {
@@ -135,8 +135,8 @@ input {
 }
 
 #emailSubmit {
-  background-color: var(--yellow) !important;
-  color: black !important;
+  background-color: var(--yellow);
+  color: black;
   border: 0;
   border-radius: 10px;
   padding: 4px 8px;
@@ -156,17 +156,17 @@ button:focus {
 
 /* SPECIAL */
 emoji {
-  font-style: normal !important;
+  font-style: normal;
 }
 
 .yellow,
 .yellow *:not(a) {
-  color: var(--yellow) !important;
+  color: var(--yellow);
 }
 
 .violet,
 .violet *:not(a) {
-  color: var(--violet) !important;
+  color: var(--violet);
 }
 
 button.rainbow,
@@ -176,7 +176,7 @@ span.rainbow {
 }
 
 hr {
-  margin: 3rem 0 !important;
+  margin: 3rem 0;
 }
 
 @media (prefers-color-scheme: dark) {
