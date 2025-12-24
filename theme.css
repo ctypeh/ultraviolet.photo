@@ -95,6 +95,32 @@ a:visited {
   color: color-mix(in hsl, white 25%, var(--violet) 75%) !important;
 }
 
+li.fav::marker {
+  content: "❧ ";
+}
+
+summary {
+  cursor: pointer;
+  color: color-mix(in hsl, white 25%, var(--violet) 75%);
+}
+
+details {
+  display: contents;
+}
+
+summary {
+  display: inline;
+  gap: 8px;
+}
+
+summary::marker {
+  content: "";
+}
+
+.navLink:hover {
+  text-decoration: none;
+}
+
 /* FORMS */
 
 #emailForm {
@@ -135,11 +161,13 @@ emoji {
   font-style: normal !important;
 }
 
-.yellow {
+.yellow,
+.yellow * {
   color: var(--yellow) !important;
 }
 
-.violet {
+.violet,
+.violet *:not(a) {
   color: var(--violet) !important;
 }
 
