@@ -176,14 +176,8 @@ span.rainbow {
 }
 
 hr {
-  margin: 3rem 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  hr {
-    -webkit-background-clip: block;
-    background-color: white;
-  }
+  background-color: white;
+  -webkit-background-clip: block;
 }
 
 @media only screen and (max-width: 500px) {
