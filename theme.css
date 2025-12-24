@@ -104,17 +104,15 @@ summary {
   color: color-mix(in hsl, white 25%, var(--violet) 75%);
 }
 
-details {
-  display: contents;
-}
-
+details,
 summary {
-  display: inline;
+  display: inline-flex;
+  flex-flow: row wrap;
   gap: 8px;
 }
 
 summary::marker {
-  content: "";
+  display: none;
 }
 
 .navLink:hover {
@@ -162,7 +160,7 @@ emoji {
 }
 
 .yellow,
-.yellow * {
+.yellow *:not(a) {
   color: var(--yellow) !important;
 }
 
