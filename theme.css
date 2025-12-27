@@ -83,16 +83,16 @@ a {
   white-space: normal;
 }
 
+a:visited {
+  color: color-mix(in hsl, white 25%, var(--violet) 75%);
+}
+
 a:hover {
   color: var(--yellow);
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: var(--violet);
   text-decoration-skip-ink: auto;
-}
-
-a:visited {
-  color: color-mix(in hsl, white 25%, var(--violet) 75%);
 }
 
 li.fav::marker {
