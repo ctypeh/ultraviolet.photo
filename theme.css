@@ -77,14 +77,20 @@ body {
   text-decoration: none;
 }
 
+.yellow,
+.yellow *:not(a) {
+  color: var(--yellow);
+}
+
+.violet,
+.violet *:not(a) {
+  color: var(--violet);
+}
+
 a {
   color: color-mix(in hsl, white 25%, var(--violet) 75%);
   text-decoration: none;
   white-space: normal;
-}
-
-a:visited {
-  color: color-mix(in hsl, white 25%, var(--violet) 75%);
 }
 
 a:hover {
@@ -93,6 +99,14 @@ a:hover {
   text-decoration-style: wavy;
   text-decoration-color: var(--violet);
   text-decoration-skip-ink: auto;
+}
+
+a:visited {
+  color: color-mix(in hsl, white 25%, var(--violet) 75%);
+}
+
+a.yellow:visited {
+  color: var(--yellow);
 }
 
 li.fav::marker {
@@ -157,16 +171,6 @@ button:focus {
 /* SPECIAL */
 emoji {
   font-style: normal;
-}
-
-.yellow,
-.yellow *:not(a) {
-  color: var(--yellow);
-}
-
-.violet,
-.violet *:not(a) {
-  color: var(--violet);
 }
 
 button.rainbow,
