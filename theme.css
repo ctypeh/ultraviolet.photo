@@ -2,27 +2,30 @@
 @import url("https://rsms.me/inter/inter.css");
 @import url("https://rsms.me/raster/raster2.css");
 
-/* DEFINITIONS */
+/* GLOBAL DEFINITIONS */
 :root {
   color-scheme: dark;
   --yellow: #fedb00;
   --violet: #440099;
+  --violet-lighter: color-mix(in hsl, white 25%, var(--violet) 75%);
+  color: white;
+  background-color: black;
   font-size: 15px;
-}
-
-:root {
-  --txt-color: white;
-  --bg-color: black;
-  background-color: var(--bg-color);
-}
-
-* {
-  color: var(--txt-color);
+  font-family: "Inter", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
+    "IBM Plex Sans", Arial, sans-serif;
+  font-display: swap;
+  text-wrap: pretty;
   margin: 0;
   padding: 0;
-  font-display: swap;
   /*cursor: url('~/cursor.png'), auto;*/
-  text-wrap: pretty;
+}
+
+/* TYPOGRAPHY */
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
+      "IBM Plex Sans", Arial, sans-serif;
+  }
 }
 
 h1,
@@ -31,10 +34,7 @@ h3 {
   line-height: 1;
 }
 
-body {
-  background: var(--bg-color);
-}
-
+/* BRANDING */
 .roundel {
   font-weight: 900;
   border-radius: 50px;
@@ -52,31 +52,6 @@ body {
   user-select: none;
 }
 
-:root {
-  font-family: "Inter", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
-    "IBM Plex Sans", Arial, sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: "Inter var", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
-      "IBM Plex Sans", Arial, sans-serif;
-  }
-}
-
-.highlight {
-  color: var(--highlight-txt-color);
-  background-color: var(--highlight-bg-color);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.callout {
-  color: var(--callout-txt-color);
-  background-color: var(--callout-bg-color);
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .yellow,
 .yellow *:not(a) {
   color: var(--yellow);
@@ -87,8 +62,9 @@ body {
   color: var(--violet);
 }
 
+/* SEMANTICS */
 a {
-  color: color-mix(in hsl, white 25%, var(--violet) 75%);
+  color: var(--violet-lighter);
   text-decoration: none;
   white-space: normal;
 }
@@ -102,7 +78,7 @@ a:hover {
 }
 
 a:visited {
-  color: color-mix(in hsl, white 25%, var(--violet) 75%);
+  color: var(--violet-lighter);
 }
 
 a.yellow:visited {
@@ -115,7 +91,7 @@ li.fav::marker {
 
 summary {
   cursor: pointer;
-  color: color-mix(in hsl, white 25%, var(--violet) 75%);
+  color: var(--violet-lighter);
 }
 
 details,
