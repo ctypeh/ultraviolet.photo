@@ -99,6 +99,14 @@ summary::marker {
   display: none;
 }
 
+blockquote:not(.noIndent) {
+  margin-bottom: 5px;
+}
+
+blockquote:not(.noIndent) {
+  padding-left: 10px;
+}
+
 .navLink:hover {
   text-decoration: none;
 }
