@@ -28,6 +28,10 @@
   }
 }
 
+* {
+  line-height: 1em;
+}
+
 /* BRANDING */
 .roundel {
   font-weight: 900;

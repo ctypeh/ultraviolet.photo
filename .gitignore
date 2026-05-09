@@ -2,6 +2,13 @@ private/*
 .DS_Store
 .nova/*
 
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+
 photography/easel-02/originals/000004250016.tif
 photography/easel-02/originals/000076540007.tif
 photography/easel-02/originals/000076570004.tif
