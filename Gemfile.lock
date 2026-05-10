@@ -77,4 +77,4 @@ DEPENDENCIES
   jekyll-redirect-from (~> 0.16)
 
 BUNDLED WITH
-   2.5.9
+  4.0.11

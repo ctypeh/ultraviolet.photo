@@ -1,0 +1,15 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "bundle exec jekyll build",
+      "shell" : "\/opt\/homebrew\/bin\/fish"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "bundle exec jekyll serve",
+      "shell" : "\/opt\/homebrew\/bin\/fish"
+    }
+  },
+  "openLogOnRun" : "fail"
+}
