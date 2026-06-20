@@ -36,6 +36,11 @@ p {
   line-height: 1.15em;
 }
 
+blockquote {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 /* BRANDING */
 .roundel {
   font-weight: 900;
