@@ -32,6 +32,10 @@
   line-height: 1em;
 }
 
+p {
+  line-height: 1.15em;
+}
+
 /* BRANDING */
 .roundel {
   font-weight: 900;
@@ -101,6 +105,14 @@ summary {
 
 summary::marker {
   display: none;
+}
+
+blockquote:not(.noIndent) {
+  margin-bottom: 5px;
+}
+
+blockquote:not(.noIndent) {
+  padding-left: 10px;
 }
 
 .navLink:hover {
