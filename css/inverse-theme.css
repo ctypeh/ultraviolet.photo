@@ -1,0 +1,14 @@
+:root {
+  background: #ffffff;
+}
+body {
+  background: #ffffff;
+}
+* {
+  color: #000000;
+}
+a:hover {
+  color: !important;
+  text-decoration-color: #440099 !important;
+  text-decoration-style: wavy !important;
+}
