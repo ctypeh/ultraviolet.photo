@@ -20,6 +20,17 @@
   /*cursor: url('~/cursor.png'), auto;*/
 }
 
+/* BRANDING */
+.yellow,
+.yellow *:not(a) {
+  color: var(--yellow);
+}
+
+.violet,
+.violet *:not(a) {
+  color: var(--violet);
+}
+
 /* TYPOGRAPHY */
 @supports (font-variation-settings: normal) {
   :root {
@@ -36,40 +47,6 @@ p {
   line-height: 1.15em;
 }
 
-blockquote {
-  font-size: 0.9rem;
-  font-style: italic;
-}
-
-/* BRANDING */
-.roundel {
-  font-weight: 900;
-  border-radius: 50px;
-  background: var(--violet);
-  display: block;
-  height: 100px;
-  width: 100px;
-  margin-bottom: 40px;
-  text-align: center;
-  align-self: center;
-  vertical-align: middle;
-  font-size: 50px;
-  line-height: 100px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.yellow,
-.yellow *:not(a) {
-  color: var(--yellow);
-}
-
-.violet,
-.violet *:not(a) {
-  color: var(--violet);
-}
-
-/* SEMANTICS */
 a {
   color: var(--violet-lighter);
   text-decoration: none;
