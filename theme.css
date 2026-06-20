@@ -12,7 +12,7 @@
   background-color: black;
   font-size: 15px;
   font-family: "Inter", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
-    "IBM Plex Sans", Arial, sans-serif;
+    "IBM Plex Sans", Arial, sans-serif, "Noto Sans";
   font-display: swap;
   text-wrap: pretty;
   margin: 0;
@@ -24,7 +24,7 @@
 @supports (font-variation-settings: normal) {
   :root {
     font-family: "Inter var", "Akzidenz-Grotesk", "Helvetica Neue", "Helvetica",
-      "IBM Plex Sans", Arial, sans-serif;
+      "IBM Plex Sans", Arial, sans-serif, "Noto Sans";
   }
 }
 
