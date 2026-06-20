@@ -43,6 +43,10 @@
   line-height: 1em;
 }
 
+h1 a:hover {
+  text-decoration: none;
+}
+
 p {
   line-height: 1.15em;
 }
@@ -51,31 +55,26 @@ a {
   color: var(--violet-lighter);
   text-decoration: none;
   white-space: normal;
-}
 
-a:hover {
-  color: var(--yellow) !important;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--violet);
-  text-decoration-skip-ink: auto;
-}
+  &:hover {
+    color: var(--yellow) !important;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--violet);
+    text-decoration-skip-ink: auto;
+  }
 
-a:visited {
-  color: var(--violet-lighter);
-}
+  &:visited {
+    color: var(--violet-lighter);
+  }
 
-a.yellow:visited {
-  color: var(--yellow);
+  &.yellow:visited {
+    color: var(--yellow);
+  }
 }
 
 li.fav::marker {
   content: "❧ ";
-}
-
-summary {
-  cursor: pointer;
-  color: var(--violet-lighter);
 }
 
 details,
@@ -85,8 +84,13 @@ summary {
   gap: 8px;
 }
 
-summary::marker {
-  display: none;
+summary {
+  cursor: pointer;
+  color: var(--violet-lighter);
+
+  &::marker {
+    display: none;
+  }
 }
 
 blockquote {
@@ -94,26 +98,8 @@ blockquote {
   font-size: 0.9rem;
 }
 
-.navLink:hover {
-  text-decoration: none;
-}
-
 /* FORMS */
-
-#emailForm {
-  display: flex;
-  gap: 12px;
-  border-radius: 8px;
-}
-
-input {
-  border: 0;
-  border-radius: 10px;
-  padding: 6px 10px;
-  font-weight: 500;
-}
-
-#emailSubmit {
+button {
   background-color: var(--yellow);
   color: black;
   border: 0;
@@ -121,16 +107,30 @@ input {
   padding: 4px 8px;
 }
 
-input:hover,
-button:hover {
-  box-shadow: 0 0 0 2px #440099;
+input {
+  border: 0;
+  border-radius: 10px;
+  padding: 6px 10px;
 }
 
-input:focus,
-button:focus {
-  outline: var(--yellow);
-  outline-color: var(--yellow);
-  box-shadow: 0 0 0 2px #fedb00;
+input,
+button {
+  &:hover {
+    box-shadow: 0 0 0 2px #440099;
+  }
+
+  &:focus {
+    outline: var(--yellow);
+    outline-color: var(--yellow);
+    box-shadow: 0 0 0 2px #fedb00;
+  }
+}
+
+#emailForm {
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 /* SPECIAL */
