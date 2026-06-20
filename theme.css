@@ -43,6 +43,10 @@
   line-height: 1em;
 }
 
+img {
+  cursor: grab;
+}
+
 h1 a:hover {
   text-decoration: none;
 }
