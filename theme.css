@@ -89,12 +89,9 @@ summary::marker {
   display: none;
 }
 
-blockquote:not(.noIndent) {
-  margin-bottom: 5px;
-}
-
-blockquote:not(.noIndent) {
-  padding-left: 10px;
+blockquote {
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 .navLink:hover {
