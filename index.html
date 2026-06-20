@@ -70,7 +70,14 @@
       <r-cell span="row" span-s="1" class="only-large-window">
         <!-- Desktop Navbar -->
         <hr />
-        <r-grid columns="5" columns-s="1">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            /*justify-content: space-between;*/
+            gap: 3em;
+          "
+        >
           <r-cell span="1"
             ><h2><a href="about.html">About</a></h2></r-cell
           >
@@ -81,9 +88,7 @@
             ><h2><a href="/newsletter/">Newsletter&nbsp;↗</a></h2></r-cell
           >
           <r-cell span="1"
-            ><h2>
-              <a href="/portfolio/">Portfolio&nbsp;↗</a>
-            </h2></r-cell
+            ><h2><a href="/portfolio/">Portfolio&nbsp;↗</a></h2></r-cell
           >
           <!--<r-cell span="1"
             ><h2><a href="">Prints</a></h2></r-cell
@@ -91,7 +96,7 @@
           <!--<r-cell span="1"
             ><h2><a href="pages/gear.html">Gear</a></h2></r-cell
           >-->
-        </r-grid>
+        </div>
         <hr
       /></r-cell>
       <r-cell span="row" span-s="1">
